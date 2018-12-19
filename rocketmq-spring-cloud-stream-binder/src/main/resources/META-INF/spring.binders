@@ -1,0 +1,2 @@
+rocketmq:\
+org.shieldproject.stream.binder.rocketmq.config.KafkaBinderConfiguration

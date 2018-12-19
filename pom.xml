@@ -3,20 +3,29 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <name>rocketmq-spring-cloud-stream-binder-parent</name>
     <groupId>org.shieldpoject.rocketmq</groupId>
     <artifactId>rocketmq-spring-cloud-stream-binder-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>2.0.0-SNAPSHOT</version>
+    <modules>
+        <module>rocketmq-spring-cloud-starter-stream</module>
+        <module>rocketmq-spring-cloud-stream-binder</module>
+    </modules>
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-build</artifactId>
         <version>2.0.4.RELEASE</version>
-        <relativePath />
+        <relativePath/>
     </parent>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+    <organization>
+        <name>shield-project</name>
+        <url>https://github.com/shield-project</url>
+    </organization>
     <developers>
         <developer>
             <name>shawnshoper</name>
